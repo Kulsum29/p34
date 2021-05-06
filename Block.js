@@ -12,7 +12,10 @@ class Block{
     }
     show()
     {
-        push ()
+        var angle = this.body.angle;
+        push();
+        translate(this.body.position.x, this.body.position.y);
+        rotate(angle);
         fill("red")
         rect(this.body.position.x,this.body.position.y,this.width,this.height)
         pop ()
